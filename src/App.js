@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemedButton } from "./ThemedButton";
+import { ThemedButtonUseHook } from "./ThemedButtonUseHook";
 import { renderRoutes } from "react-router-config";
 import { ThemeContext, themes } from "./context";
 import "./App.css";
@@ -31,6 +32,7 @@ export default function App(props) {
         <h1>Welcome to React Router!</h1>
         <div>{listItems()}</div>
         <ThemedButton>显示动态 Context</ThemedButton>
+        <ThemedButtonUseHook>使用Hooks显示动态 Context</ThemedButtonUseHook>
         <div>
           <NavLink exact activeStyle={{ color: "" }} to="/">
             app
